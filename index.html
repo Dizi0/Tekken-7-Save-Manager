@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Tekken Saver</title>
-  </head>
-  <body>
-    <h1>Welcome to Tekken Save Manager</h1>
-    <div class="">
-      This app is design to prevent save loss due to corruption or game reinstallation<br>
-      I do not condonne or aprove save scumming, as this tool is only made for honest backup usage
-    </div>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+  <!--    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+  <title>Tekken Saver</title>
+</head>
+
+<body>
+<h1>Welcome to Tekken Save Manager</h1>
+<div class="">
+  This app is design to prevent save loss due to corruption or game reinstallation<br>
+  I do not condonne or aprove save scumming, as this tool is only made for honest backup usage
+</div>
+<div class="buttons">
+  <button class="backup" onclick="backupSave()">Backup</button>
+  <button class="import" onclick="importSave()">Import</button>
+</div>
+
+<!-- The actual snackbar -->
+<div id="snackbar">Some text some message..</div>
+
+<!-- You can also require other files to run in this process -->
+<script src="./renderer.js"></script>
+</body>
+
 </html>
