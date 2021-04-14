@@ -1,6 +1,6 @@
 {
   "name": "tekken-save-manager",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Tekken Save Manager",
   "main": "main.js",
   "scripts": {
