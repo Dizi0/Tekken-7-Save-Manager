@@ -4,6 +4,9 @@ body{
     text-align:center;
     color: #c1c1c1;
 }
+.container {
+    margin-top: 25%;
+}
 .backup{
     background-color: #009688;
     color: white;
@@ -37,10 +40,10 @@ body{
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
+     visibility: hidden;
     min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
+    margin-left: -135px; /* Divide value of min-width by 2 */
+    background-color: #ff8d00; /* Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
     border-radius: 2px; /* Rounded borders */

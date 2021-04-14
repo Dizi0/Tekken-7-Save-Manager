@@ -6,7 +6,9 @@ const fs = require('fs-extra')
 
 function createWindow () {
   // Create the browser window.
+
   const mainWindow = new BrowserWindow({
+
     width: 800,
     height: 600,
     webPreferences: {
@@ -15,14 +17,15 @@ function createWindow () {
       contextIsolation: false,
       enableRemoteModule: true,
 
+
     }
   })
-
+  mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
