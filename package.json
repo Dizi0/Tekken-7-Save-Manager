@@ -1,20 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "tekken-save-manager",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A Tekken Save Manager",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Dizi0/Tekken-7-Save-Manager",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Tekken 7",
+    "Save Manager"
   ],
-  "author": "GitHub",
+  "author": "Dizi0",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^12.0.2"
