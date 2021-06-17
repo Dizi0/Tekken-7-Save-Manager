@@ -7,7 +7,35 @@
 // Dans le processus de rendu (page web).
 const { ipcRenderer } = require('electron')
 const fs = require('fs-extra')
+
 let username = require("os").userInfo().username
+const openExplorer = require('open-file-explorer');
+
+function openBackupDir(){
+    const path = 'C:\\TekkenSaveBackup';
+    openExplorer(path, err => {
+        if(err) {
+            console.log(err);
+            snack(err);
+        }
+        else {
+            //Do Something
+        }
+    });
+}
+
+function openTekkenDir(){
+    const path = 'C:\\Users\\'+username+'\\AppData\\Local\\TekkenGame\\Saved\\SaveGames\\TEKKEN7';
+    openExplorer(path, err => {
+        if(err) {
+            console.log(err);
+            snack(err);
+        }
+        else {
+            //Do Something
+        }
+    });
+}
 
 function backupSave(){
     try {
@@ -39,7 +67,6 @@ function snack(msg) {
     x.innerText = msg
     // Add the "show" class to DIV
     x.className = "show";
-
     // After 3 seconds, remove the show class from DIV
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
